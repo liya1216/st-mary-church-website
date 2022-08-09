@@ -1,0 +1,208 @@
+header{
+    background: url(mary2.jpg);
+    padding: 50px;
+    text-align: justify;
+    text-decoration: aliceblue;
+    
+}
+
+
+.note{
+    font-size: medium;
+}
+nav{
+  background-color: rgb(240, 225, 13);
+    font-size: large;
+    font: bold;
+    padding-bottom: 40px;
+    padding-top: 5px;
+  }
+h1{
+   color: black; 
+}
+article{
+    display:inline-block;
+    vertical-align: top;
+
+}
+article,aside{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+article{
+    width: 65%;
+    margin-right: 15px;
+
+}
+aside h1{
+    color: white;
+}
+aside{
+    position: relative;
+    width: 30%;
+    background-color: #333;
+    box-shadow: 0px 2px 5px darkgray;
+    border-radius: 5px;
+     margin: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+  
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
+
+/* Two image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .all-browsers {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+  }
+  
+  .all-browsers > h1, .browser {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .browser {
+    background: white;
+  }
+  
+  .browser > h2, p {
+    margin: 4px;
+    font-size: 90%;
+  }
+ .text-box p{
+   font-size: 20px;
+   font-weight: 100;
+   overflow: hidden;
+   position: relative;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   background-image: 0 0;
+   animation: back 20s liner infinite;
+   background: linear-gradient(90deg ,rgb(4, 128, 0),yellow,red);
+   background-repeat: no-repeat;
+   background-size: 80%;
+
+   animation: animate 3s linear infinite;
+   -webkit-text-stroke: 1px #ffff;
+   
+    
+  }
+  @keyframes animate
+  {
+    0%{
+      background-position: -500% ;
+    }
+   100%{
+     background-position: 500%;
+   }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+ 
+
+
